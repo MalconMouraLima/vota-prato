@@ -25,9 +25,11 @@
 			</td>
 			<td>
 				<%= link_to 'Deletar', {action: 'destroy', id: restaurante}, {method: "delete"} %>
-			</td>
+			</td>			
 		</tr>
 		<% end %>
+		<br\>
+		<%= link_to 'Novo', action: 'new' %>
 	</table>
 
 </body>

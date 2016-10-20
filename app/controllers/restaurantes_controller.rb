@@ -12,4 +12,8 @@ class RestaurantesController < ApplicationController
 		@restaurante.destroy
 		redirect_to(action: "index")
 	end
+
+	def new
+		@restaurante = Restaurante.new
+	end
 end
