@@ -1,5 +1,5 @@
 class Restaurante < ActiveRecord::Base
-	#attr_accessible :nome, :endereco, :especialidade
+	attr_accessible :nome, :endereco, :especialidade
 
 	validates :nome, presence: { message: "Deve ser preenchido"}
 	validates :endereco, presence: { message: "Deve ser preenchido"}

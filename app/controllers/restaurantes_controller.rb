@@ -16,4 +16,14 @@ class RestaurantesController < ApplicationController
 	def new
 		@restaurante = Restaurante.new
 	end
+
+	def create
+		@restaurante = Restaurante.new(params[:restaurante])
+		@restaurante.save
+		redirect_to(action: "show", id: @restaurante)
+	end
+
+	def edit
+		@restaurante = Restaurante.find(params[:id])
+	end
 end

@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.2.6)
       actionpack (= 4.2.6)
@@ -152,7 +152,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
-  jquery-rails
+  jquery-rails (= 4.2.1)
   protected_attributes
   rails (= 4.2.6)
   sass-rails (~> 5.0)
@@ -164,4 +164,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
