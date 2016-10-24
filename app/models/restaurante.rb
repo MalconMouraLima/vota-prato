@@ -3,8 +3,8 @@ class Restaurante < ActiveRecord::Base
 
 	validates :nome, presence: { message: "Deve ser preenchido"}
 	validates :endereco, presence: { message: "Deve ser preenchido"}
-	validates :especialidade, presence: { message: "Deve ser preenchido"}
-	validates :nome, uniqueness: { message: "Nome já cadastrado"}
+	validates :especialidade, presence: { message: "Deve ser preenchida"}
+	validates :nome, uniqueness: { message: "Já cadastrado"}
 
 	has_many :qualificacoes
 	has_and_belongs_to_many :pratos
